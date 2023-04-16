@@ -11,10 +11,10 @@ let continuar;
 let nombreBebida;
 let totalBebida = "";
 
-while(continuar != "no") {
+while(continuar != "no" ) {
 
     nombreBebida = prompt("que bebida desea agregar?");
     totalBebida = totalBebida + ", " + nombreBebida;
-    continuar = prompt("¿desea agregar otra bebida? si/no");
+    continuar = prompt("¿desea agregar otra bebida? si/no").toLowerCase();
 }
 alert("Agrego las siguientes bebidas" + totalBebida);
